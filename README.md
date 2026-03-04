@@ -1,6 +1,17 @@
-﻿# Research Prompt Toolkit
+﻿# Vibe Research
 
-A practical toolkit for researchers: ready-to-use prompt templates plus a composable method to build new prompts for new research scenarios.
+> Make AI Research Better for Everyone
+
+## Core Insight
+
+- **Less is more.** Start a chatpgt project, use a wonderful prompt, start excited vibe research.
+- **Templates age.** As AI gets stronger, the best prompt for any task keeps changing. No template stays optimal forever.
+- **Skills compound.** It matters more to build your own prompt composition skill than to collect templates. A prompt composed for your exact context always beats a fixed one.
+
+Claude builds skills. Why shouldn't you?
+This project is your personal skill library for research prompting —
+not a folder of old templates, but a system that grows with you.
+
 
 ## Start Here
 
