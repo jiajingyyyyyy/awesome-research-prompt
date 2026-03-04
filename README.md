@@ -1,74 +1,59 @@
-﻿# Vibe Skill
-> Make AI Research Better for Everyone
+﻿# Research Prompt Toolkit
 
-## Core Insight
+A practical toolkit for researchers: ready-to-use prompt templates plus a composable method to build new prompts for new research scenarios.
 
-As AI gets stronger, researchers get better at improvising prompts.
-A fixed template is often weaker than a prompt that is composed for the exact context.
+## Start Here
 
-This project treats prompting as a skill system.
-The contribution is a reusable library of visible **Vibe Placeholder Skills** plus a complete list of research prompts built from that system.
+- Direct use: open [prompts/catalog.md](prompts/catalog.md)
+- Adapt use: edit placeholders inside each prompt file
+- Build new: read [docs/how-to-vibe.md](docs/how-to-vibe.md)
 
-## Two Kinds of Placeholders in This Repo
+## Prompt Coverage by Research Stage
 
-### 1) Prompt-Composition Placeholders
-These are placeholders used to generate high-quality prompts.
-Examples: `{{task_goal}}`, `{{quality_criteria}}`, `{{hard_constraints}}`.
+| Stage | Representative Prompts |
+|---|---|
+| Idea | Idea Discussion Partner, Research Question Narrower |
+| Reading | Paper Dissection for My Research, Paper-to-Project Transfer |
+| Design | Hypothesis Stress Test, Minimal Decisive Experiment |
+| Writing | Section Drafter from Notes, Claim-Evidence Linter |
+| Revision | Ablation Gap Finder, Rebuttal Strategy Builder |
 
-### 2) Research-Scope Placeholders
-These define which parts of research work are suitable for prompt-vibing.
-Examples: `{{research_stage}}`, `{{artifact_type}}`, `{{decision_risk}}`.
-
-See:
-- [Vibe Placeholder Skills](docs/vibe-placeholder-skills.md)
-- [Vibeable Research Map](docs/vibeable-research-map.md)
-
-## Complete Prompt List
-
-This repository includes a full prompt catalog organized by research workflow.
-
-- [Prompt Catalog](prompts/catalog.md)
-- Mandatory prompts requested by this project direction:
-  - [Idea Discussion Partner](prompts/idea/idea-discussion-partner.md)
-  - [Paper Dissection for My Research](prompts/reading/paper-dissection.md)
-
-## What Makes This Repo Different
-
-- Placeholder-first instead of template-first
-- Workflow-aware instead of isolated prompts
-- Built for adaptation across models and domains
-- Includes required prompts for paper reading and idea discussion
-
-## Quick Start
-
-1. Choose a research task from [Prompt Catalog](prompts/catalog.md).
-2. Fill the placeholders for your own context.
-3. Run one pass.
-4. Use the failure-mode notes to iterate.
-
-## Repository Layout
+## Repository Structure
 
 ```text
 prompts/
-  catalog.md
-  idea/
-  reading/
-  design/
-  writing/
-  revision/
+  catalog.md                      # stage index and quick entry
+  idea/                           # problem framing and narrowing
+  reading/                        # paper analysis and transfer
+  design/                         # hypothesis and experiment design
+  writing/                        # drafting and claim-evidence checks
+  revision/                       # ablation and rebuttal support
 
 docs/
-  vibe-placeholder-skills.md
-  vibeable-research-map.md
+  how-to-vibe.md                  # composition method when no template fits
+  vibe-placeholder-skills.md      # placeholder reference (summary)
+  vibeable-research-map.md        # stage map (short reference)
 ```
+
+## Why This Toolkit Exists
+
+Most researchers ask one question first: "I need help now, which prompt should I use?"
+This repo answers that first, then gives a composition method for cases not covered by existing prompts.
 
 ## Contributing
 
-To contribute a new prompt, include:
-1. Placeholder set
+A prompt contribution should include:
+
+1. Placeholder set used
 2. Output contract
 3. Failure modes
 4. One reproducible example
+
+## Acknowledgements
+
+This project is inspired by open prompt-sharing efforts in the research community, especially:
+
+- https://github.com/Leey21/awesome-ai-research-writing
 
 ## License
 
