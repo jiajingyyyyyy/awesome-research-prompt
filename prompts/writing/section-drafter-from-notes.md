@@ -1,4 +1,4 @@
-﻿# Section Drafter from Notes
+# Section Drafter from Notes
 
 ## Ready-to-Copy Prompt
 
@@ -38,3 +38,9 @@ Output format:
   - Iteration: ask for one-line topic sentence plus transition logic.
 - Failure: claim-evidence map missing items.
   - Iteration: require map for every paragraph.
+
+## Workflow Integration
+
+- **Feeds from:** [Minimal Decisive Experiment](minimal-decisive-experiment.md) *(after results are in)*
+- **Feeds into:** [Claim-Evidence Linter](claim-evidence-linter.md)
+- **Handoff artifact:** The draft section text from output item 1 → paste as `{{draft_text}}` in Claim-Evidence Linter. The claim-evidence map from item 2 → paste as `{{available_results}}`.

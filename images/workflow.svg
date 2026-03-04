@@ -1,0 +1,84 @@
+<svg viewBox="0 0 900 200" xmlns="http://www.w3.org/2000/svg" font-family="Georgia, 'Times New Roman', serif">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#0f172a"/>
+      <stop offset="100%" style="stop-color:#1e293b"/>
+    </linearGradient>
+    <linearGradient id="g1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#3b82f6"/>
+      <stop offset="100%" style="stop-color:#1d4ed8"/>
+    </linearGradient>
+    <linearGradient id="g2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#8b5cf6"/>
+      <stop offset="100%" style="stop-color:#6d28d9"/>
+    </linearGradient>
+    <linearGradient id="g3" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#06b6d4"/>
+      <stop offset="100%" style="stop-color:#0891b2"/>
+    </linearGradient>
+    <linearGradient id="g4" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#10b981"/>
+      <stop offset="100%" style="stop-color:#059669"/>
+    </linearGradient>
+    <linearGradient id="g5" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f59e0b"/>
+      <stop offset="100%" style="stop-color:#d97706"/>
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge><feMergeNode in="coloredBlur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <marker id="arrow" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L8,3 z" fill="#475569"/>
+    </marker>
+  </defs>
+
+  <!-- Background -->
+  <rect width="900" height="200" fill="url(#bg)" rx="12"/>
+
+  <!-- Stage boxes -->
+  <!-- Idea -->
+  <rect x="30" y="60" width="130" height="80" rx="10" fill="url(#g1)" opacity="0.9"/>
+  <text x="95" y="93" text-anchor="middle" fill="white" font-size="13" font-weight="bold">💡 IDEA</text>
+  <text x="95" y="112" text-anchor="middle" fill="#bfdbfe" font-size="9.5">Discussion Partner</text>
+  <text x="95" y="126" text-anchor="middle" fill="#bfdbfe" font-size="9.5">Question Narrower</text>
+
+  <!-- Arrow -->
+  <line x1="162" y1="100" x2="192" y2="100" stroke="#475569" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <!-- Reading -->
+  <rect x="195" y="60" width="130" height="80" rx="10" fill="url(#g2)" opacity="0.9"/>
+  <text x="260" y="93" text-anchor="middle" fill="white" font-size="13" font-weight="bold">📄 READING</text>
+  <text x="260" y="112" text-anchor="middle" fill="#ede9fe" font-size="9.5">Paper Dissection</text>
+  <text x="260" y="126" text-anchor="middle" fill="#ede9fe" font-size="9.5">Paper→Project Transfer</text>
+
+  <!-- Arrow -->
+  <line x1="327" y1="100" x2="357" y2="100" stroke="#475569" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <!-- Design -->
+  <rect x="360" y="60" width="130" height="80" rx="10" fill="url(#g3)" opacity="0.9"/>
+  <text x="425" y="93" text-anchor="middle" fill="white" font-size="13" font-weight="bold">🔬 DESIGN</text>
+  <text x="425" y="112" text-anchor="middle" fill="#cffafe" font-size="9.5">Hypothesis Stress Test</text>
+  <text x="425" y="126" text-anchor="middle" fill="#cffafe" font-size="9.5">Minimal Experiment</text>
+
+  <!-- Arrow -->
+  <line x1="492" y1="100" x2="522" y2="100" stroke="#475569" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <!-- Writing -->
+  <rect x="525" y="60" width="130" height="80" rx="10" fill="url(#g4)" opacity="0.9"/>
+  <text x="590" y="93" text-anchor="middle" fill="white" font-size="13" font-weight="bold">✍️ WRITING</text>
+  <text x="590" y="112" text-anchor="middle" fill="#d1fae5" font-size="9.5">Section Drafter</text>
+  <text x="590" y="126" text-anchor="middle" fill="#d1fae5" font-size="9.5">Claim-Evidence Linter</text>
+
+  <!-- Arrow -->
+  <line x1="657" y1="100" x2="687" y2="100" stroke="#475569" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <!-- Revision -->
+  <rect x="690" y="60" width="130" height="80" rx="10" fill="url(#g5)" opacity="0.9"/>
+  <text x="755" y="93" text-anchor="middle" fill="white" font-size="13" font-weight="bold">🔁 REVISION</text>
+  <text x="755" y="112" text-anchor="middle" fill="#fef3c7" font-size="9.5">Ablation Gap Finder</text>
+  <text x="755" y="126" text-anchor="middle" fill="#fef3c7" font-size="9.5">Rebuttal Builder</text>
+
+  <!-- Bottom label -->
+  <text x="450" y="185" text-anchor="middle" fill="#475569" font-size="10" font-style="italic">Each stage produces a handoff artifact → feeds the next stage</text>
+</svg>

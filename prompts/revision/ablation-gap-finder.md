@@ -1,4 +1,4 @@
-﻿# Ablation Gap Finder
+# Ablation Gap Finder
 
 ## Ready-to-Copy Prompt
 
@@ -33,3 +33,9 @@ Output format:
   - Iteration: add runtime or compute cap.
 - Failure: no reviewer framing.
   - Iteration: ask for likely reviewer wording.
+
+## Workflow Integration
+
+- **Feeds from:** [Claim-Evidence Linter](claim-evidence-linter.md)
+- **Feeds into:** [Rebuttal Strategy Builder](rebuttal-strategy-builder.md) *(if submission is rejected)*
+- **Handoff artifact:** The missing ablation from output item 1 + reviewer framing from item 2 → paste as part of `{{reviewer_comments}}` in Rebuttal Strategy Builder if you received this as actual reviewer feedback.

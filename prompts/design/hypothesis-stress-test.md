@@ -1,4 +1,4 @@
-﻿# Hypothesis Stress Test
+# Hypothesis Stress Test
 
 ## Ready-to-Copy Prompt
 
@@ -34,3 +34,9 @@ Output format:
   - Iteration: ask for lowest-cost check first.
 - Failure: no revision trigger.
   - Iteration: request a numeric or categorical failure condition.
+
+## Workflow Integration
+
+- **Feeds from:** [Idea Discussion Partner](idea-discussion-partner.md) · [Research Question Narrower](research-question-narrower.md)
+- **Feeds into:** [Minimal Decisive Experiment](minimal-decisive-experiment.md)
+- **Handoff artifact:** The disconfirming check from output item 3 → paste as `{{research_question}}` in Minimal Decisive Experiment. The result pattern from item 4 → paste as `{{decision_needed}}`.

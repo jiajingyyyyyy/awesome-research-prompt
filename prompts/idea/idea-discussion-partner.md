@@ -1,4 +1,4 @@
-﻿# Idea Discussion Partner
+# Idea Discussion Partner
 
 ## Ready-to-Copy Prompt
 
@@ -46,3 +46,9 @@ Output format:
   - Iteration: strengthen "do not provide full pipeline" constraint.
 - Failure: no falsifiable test.
   - Iteration: explicitly ask for a measurable pass/fail criterion.
+
+## Workflow Integration
+
+- **Feeds from:** —  *(entry point of the pipeline)*
+- **Feeds into:** [Research Question Narrower](research-question-narrower.md) · [Hypothesis Stress Test](hypothesis-stress-test.md)
+- **Handoff artifact:** The minimal falsification test from output item 4 → paste directly as `{{hypothesis}}` and `{{mechanism}}` in Hypothesis Stress Test.

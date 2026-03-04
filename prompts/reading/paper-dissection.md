@@ -1,4 +1,4 @@
-﻿# Paper Dissection for My Research
+# Paper Dissection for My Research
 
 ## Ready-to-Copy Prompt
 
@@ -45,3 +45,9 @@ Output format:
   - Iteration: require one overlapping claim in exact wording.
 - Failure: experiment suggestion is not actionable.
   - Iteration: require dataset, metric, and expected direction.
+
+## Workflow Integration
+
+- **Feeds from:** *(lateral tool — use at any stage when reading a relevant paper)*
+- **Feeds into:** [Paper-to-Project Transfer](paper-to-project-transfer.md) · [Hypothesis Stress Test](hypothesis-stress-test.md)
+- **Handoff artifact:** The competition point and complement point → paste as context in Paper-to-Project Transfer. The added experiment recommendation → paste as `{{known_counterexamples}}` in Hypothesis Stress Test.

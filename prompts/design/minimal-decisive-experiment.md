@@ -1,4 +1,4 @@
-﻿# Minimal Decisive Experiment
+# Minimal Decisive Experiment
 
 ## Ready-to-Copy Prompt
 
@@ -34,3 +34,9 @@ Output format:
   - Iteration: require explicit threshold.
 - Failure: failure interpretation is missing.
   - Iteration: require one fallback action.
+
+## Workflow Integration
+
+- **Feeds from:** [Hypothesis Stress Test](hypothesis-stress-test.md)
+- **Feeds into:** [Section Drafter from Notes](section-drafter-from-notes.md)  *(after running the experiment)*
+- **Handoff artifact:** The setup from output item 1 + results → become `{{raw_notes}}` in Section Drafter. The decision rule from item 2 → becomes part of `{{must_keep_points}}`.

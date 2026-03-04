@@ -1,4 +1,4 @@
-﻿# Paper-to-Project Transfer
+# Paper-to-Project Transfer
 
 ## Ready-to-Copy Prompt
 
@@ -34,3 +34,9 @@ Output format:
   - Iteration: force explicit risk separation.
 - Failure: validation signals are unclear.
   - Iteration: require metric and short evaluation window.
+
+## Workflow Integration
+
+- **Feeds from:** [Paper Dissection](paper-dissection.md) *(lateral tool)*
+- **Feeds into:** [Hypothesis Stress Test](hypothesis-stress-test.md) · [Minimal Decisive Experiment](minimal-decisive-experiment.md)
+- **Handoff artifact:** The chosen transfer option + first validation signal → paste as `{{hypothesis}}` and `{{mechanism}}` in Hypothesis Stress Test, or directly as `{{research_question}}` in Minimal Decisive Experiment if the transfer is already well-defined.

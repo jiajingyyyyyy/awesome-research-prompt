@@ -1,4 +1,4 @@
-﻿# Claim-Evidence Linter
+# Claim-Evidence Linter
 
 ## Ready-to-Copy Prompt
 
@@ -31,3 +31,9 @@ Output format:
   - Iteration: require evidence item per claim.
 - Failure: rewrite suggestions change meaning.
   - Iteration: require semantic preservation.
+
+## Workflow Integration
+
+- **Feeds from:** [Section Drafter from Notes](section-drafter-from-notes.md)
+- **Feeds into:** [Ablation Gap Finder](ablation-gap-finder.md)
+- **Handoff artifact:** The unsupported claims from output item 2 → become the most important inputs for `{{current_ablations}}` in Ablation Gap Finder. Any claim marked "unsupported" signals a missing ablation.

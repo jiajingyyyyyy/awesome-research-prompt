@@ -1,4 +1,4 @@
-﻿# Rebuttal Strategy Builder
+# Rebuttal Strategy Builder
 
 ## Ready-to-Copy Prompt
 
@@ -34,3 +34,9 @@ Output format:
   - Iteration: rank comments by acceptance impact.
 - Failure: promises impossible new results.
   - Iteration: enforce constraint check in output.
+
+## Workflow Integration
+
+- **Feeds from:** [Ablation Gap Finder](ablation-gap-finder.md) *(predicted reviewer concerns)* · *(actual reviewer comments after decision)*
+- **Feeds into:** — *(terminal stage of the pipeline)*
+- **Handoff artifact:** The priority response plan from output item 1 is the final deliverable. Residual risk from item 4 → use to decide whether to appeal or revise for resubmission.

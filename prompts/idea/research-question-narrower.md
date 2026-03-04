@@ -1,4 +1,4 @@
-﻿# Research Question Narrower
+# Research Question Narrower
 
 ## Ready-to-Copy Prompt
 
@@ -36,3 +36,9 @@ Output format:
   - Iteration: add a measurable success criterion requirement.
 - Failure: non-goal is vague.
   - Iteration: require one excluded method or claim.
+
+## Workflow Integration
+
+- **Feeds from:** [Idea Discussion Partner](idea-discussion-partner.md)
+- **Feeds into:** [Hypothesis Stress Test](hypothesis-stress-test.md)
+- **Handoff artifact:** The final research question from output item 1 → paste as `{{hypothesis}}` in Hypothesis Stress Test. The non-goal from item 3 → paste as `{{known_counterexamples}}`.
