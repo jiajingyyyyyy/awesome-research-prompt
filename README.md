@@ -44,8 +44,80 @@ Pick your current research stage:
 | Find the ablation a reviewer will demand | [Ablation Gap Finder](prompts/revision/ablation-gap-finder.md) |
 | Write a rebuttal that doesn't escalate | [Rebuttal Strategy Builder](prompts/revision/rebuttal-strategy-builder.md) |
 
-**Recommended setup:** Add `docs/how-to-vibe.md` and the prompts you use most.
-Or add them all — each file is self-contained.
+---
+
+## Setup: Use as a Claude Project
+
+The fastest way to use this toolkit is to load it into a Claude Project.
+Once configured, you invoke prompts by name in natural language — no copy-pasting required.
+
+### Step 1: Create a Claude Project
+
+Open [claude.ai](https://claude.ai), click **Projects** → **New Project**.
+Name it something like `Research Toolkit`.
+
+### Step 2: Add files to Project Knowledge
+
+Upload the following files to the project's Knowledge base:
+
+**Core method (required):**
+- `docs/how-to-vibe.md`
+
+**Prompts — add the stages you use most:**
+- `prompts/idea/idea-discussion-partner.md`
+- `prompts/idea/research-question-narrower.md`
+- `prompts/reading/paper-dissection.md`
+- `prompts/reading/paper-to-project-transfer.md`
+- `prompts/design/hypothesis-stress-test.md`
+- `prompts/design/minimal-decisive-experiment.md`
+- `prompts/writing/section-drafter-from-notes.md`
+- `prompts/writing/claim-evidence-linter.md`
+- `prompts/revision/ablation-gap-finder.md`
+- `prompts/revision/rebuttal-strategy-builder.md`
+
+> If unsure, upload all of them. Each file is self-contained and small.
+
+### Step 3: Set a Project System Prompt (optional but recommended)
+
+In the Project's **Custom instructions** field, paste:
+
+```
+You have access to a structured research prompt toolkit.
+When the user names a prompt (e.g. "Hypothesis Stress Test"), locate it in your knowledge,
+fill in the placeholders with the information the user provides, and produce output
+that strictly follows that prompt's output contract.
+If the user does not provide enough information to fill a placeholder, ask for it before proceeding.
+Do not summarize or paraphrase the prompt structure — execute it.
+```
+
+### Step 4: Use it
+
+You no longer need to copy-paste prompt templates. Just describe what you need:
+
+```
+Run a Hypothesis Stress Test.
+Hypothesis: sparse attention reduces memory without hurting downstream NER performance.
+Mechanism: local windows capture most entity-relevant context.
+Known counterexamples: Longformer ablations show degradation on nested entities.
+```
+
+Claude will locate the prompt, fill the placeholders, and return output in the correct format.
+
+To chain stages, carry the output forward explicitly:
+
+```
+The disconfirming check from the stress test was: [paste output].
+Now run a Minimal Decisive Experiment with resource limit: 1 GPU day.
+```
+
+### What this gives you
+
+| Without Project setup | With Project setup |
+|---|---|
+| Copy-paste prompt template each time | Invoke by name in plain language |
+| Manually track which stage you're in | Claude follows the handoff chain |
+| Re-read failure modes when output is bad | Ask Claude to iterate using the failure modes |
+
 ---
 
 ## A Real Example
@@ -159,6 +231,8 @@ Without failure modes, the contribution will not be merged.
 ## Acknowledgements
 
 Inspired by open prompt-sharing efforts in the research community, especially [awesome-ai-research-writing](https://github.com/Leey21/awesome-ai-research-writing).
+
+[AI-Research-SKILLs](https://github.com/Orchestra-Research/AI-Research-SKILLs)
 
 ---
 
