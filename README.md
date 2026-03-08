@@ -232,7 +232,6 @@ Without failure modes, the contribution will not be merged.
 
 Inspired by open prompt-sharing efforts in the research community, especially [awesome-ai-research-writing](https://github.com/Leey21/awesome-ai-research-writing).
 
-[AI-Research-SKILLs](https://github.com/Orchestra-Research/AI-Research-SKILLs)
 
 ---
 
